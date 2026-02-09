@@ -69,9 +69,6 @@ python ./mainldm/sample_cachequant_imagenet_quant.py <--recon>
 ```
 The `--recon` to use reconstruction.
 
-### Details
-The repo provides code for all experiments. We use the LDM-4 on ImageNet as an example to illustrate the usage. Other experiments are implemented similarly. Our experiments are aligned with *[Deepcache](https://github.com/horseee/DeepCache)*: non-uniform caching is used for stable-diffusion, and for other models only when `intervel` is greater than 10. We use the *[guided-diffusion](https://github.com/openai/guided-diffusion)* and *[clip-score](https://github.com/Taited/clip-score)* to evaluate results. The accelerated diffusion models are deployed by utilizing *[CUTLASS](https://github.com/NVIDIA/cutlass)* and *[torch_quantizer](https://github.com/ThisisBillhe/torch_quantizer)*.
-
 
 ## Citation
 
